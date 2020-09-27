@@ -1,0 +1,77 @@
+.hero{
+  height: 400px;
+  .cover-image{
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      height: 400px;
+      width: 100%;
+      position: relative;
+      
+      .header-anime{
+          color: #fff;
+          .container{
+          position: absolute;
+      }
+      .anime-header-description{
+          overflow: hidden;
+          text-overflow: ellipsis;
+      }
+  }
+}
+}
+.overlay{
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  background: rgba(0,0,0,.6);
+}
+.more-random-anime{
+  margin-top: -100px;
+  .content-title{
+      width: 150px;
+  }
+}
+.anime-like{
+  .badge{
+  border-color: #fff;
+}
+a:hover{
+  text-decoration: none;
+}
+  .anime-cover{
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      transition: all .3s;
+  }
+  a:hover .anime-cover{
+      transform: translate(0, -10px);
+  }
+}
+.move-up{
+  transition: all .3s;
+}
+.move-up:hover{
+  transform: translate(0, -10px);
+}
+.action{
+  text-decoration: none;
+}
+.dark-mode{
+  a.text-dark h2{
+      color: #fff;
+  }
+} 
+@media only screen and (max-width: 770px) {
+  .more-random-anime{
+      margin-top: 20px;
+  }
+  .anime-header-description{
+      height: 150px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: block;
+  }
+}
